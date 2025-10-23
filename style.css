@@ -1,0 +1,338 @@
+/* --- Variables de Color (basadas en el logo) --- */
+:root {
+    --color-fondo: #FBF9F3;         /* Crema claro del fondo del logo */
+    --color-texto: #3A4A3F;         /* Verde oscuro del texto */
+    --color-acento: #8A7C4B;        /* Dorado/Oliva de los laureles */
+    --color-acento-rojo: #B93C3C;   /* Rojo del chile/mermelada */
+    --color-whatsapp: #25D366;      /* Verde WhatsApp */
+    --color-blanco: #FFFFFF;
+}
+
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem; 
+    color: var(--color-texto);
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-acento);
+}
+
+/* --- Encabezado y Navegación --- */
+.navbar {
+    background-color: var(--color-blanco);
+    border-bottom: 2px solid #EAE6D9; 
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav li {
+    margin-left: 2rem;
+}
+
+.navbar nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+    color: var(--color-acento);
+    border-bottom: 2px solid var(--color-acento);
+}
+
+/* --- Estilos del Menú Desplegable --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-blanco);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 100;
+    border-radius: 5px;
+    border-top: 3px solid var(--color-acento); 
+}
+
+.dropdown-content a {
+    color: var(--color-texto);
+    padding: 12px 16px;
+    display: block; 
+    text-align: left;
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f5f0; 
+    color: var(--color-acento);
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar nav a.drop-btn:hover,
+.dropdown:hover .drop-btn {
+    border-bottom: 2px solid var(--color-acento);
+}
+
+
+/* --- Sección Hero (Bienvenida) --- */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+    background-color: #F8F6EF;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7a6d41;
+}
+
+/* --- Sección Categorías (Homepage) --- */
+.categorias {
+    padding: 4rem 0;
+}
+
+.categorias h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem;
+}
+
+.categoria-tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid #EAE6D9;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    color: var(--color-texto);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria-tarjeta:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.categoria-tarjeta .tarjeta-icono {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.categoria-tarjeta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-texto);
+}
+
+.categoria-tarjeta p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* --- Página de Listado de Productos --- */
+.product-listing {
+    padding: 4rem 0;
+}
+
+.product-listing h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.category-description {
+    text-align: center;
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--color-blanco);
+    border: 1px solid #EAE6D9;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: contain; 
+    margin-bottom: 1.5rem;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    color: var(--color-texto);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    color: var(--color-acento);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.btn-product {
+    background-color: var(--color-whatsapp); 
+    color: var(--color-blanco);
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+}
+
+.btn-product:hover {
+    background-color: #128C7E; 
+}
+
+/* --- Pie de Página --- */
+.footer {
+    background-color: var(--color-texto); 
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+/* --- Responsive (Adaptación Móvil) --- */
+@media (max-width: 992px) {
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar nav li {
+        margin-left: 0;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .categorias-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .product-card img {
+        height: 250px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* --- Estilo para centrar un solo producto --- */
+.product-grid.single-item {
+    grid-template-columns: 1fr; /* Una sola columna */
+    max-width: 450px; /* Ancho máximo para la tarjeta */
+    margin: 0 auto; /* Centra la cuadrícula */
+}
