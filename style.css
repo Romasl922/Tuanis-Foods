@@ -335,4 +335,55 @@ a {
     grid-template-columns: 1fr; /* Una sola columna */
     max-width: 450px; /* Ancho máximo para la tarjeta */
     margin: 0 auto; /* Centra la cuadrícula */
+}/* --- Estilos para logos en tarjetas de categoría --- */
+.categoria-tarjeta .tarjeta-logo {
+    height: 90px;  /* Altura fija para todos los logos */
+    max-width: 180px; /* Ancho máximo para que no se estiren */
+    object-fit: contain; /* Mantiene la proporción del logo */
+    margin-bottom: 1rem;
+}
+
+/* Ajuste para que el texto de la marca se vea bien */
+.categoria-tarjeta p {
+    font-size: 1rem;
+    line-height: 1.4;
+}/* --- Estilos para la Página "Sobre Nosotros" --- */
+.about-us-content {
+    padding: 4rem 0;
+}
+
+/* Un contenedor especial para texto, más angosto */
+.container-text {
+    max-width: 800px; /* Ancho ideal para lectura */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.container-text h1 {
+    text-align: center;
+    border-bottom: 3px solid var(--color-acento);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container-text h2 {
+    font-size: 2rem;
+    color: var(--color-texto);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-text p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Centrar el botón */
+.container-text .cta-button {
+    display: table; /* Truco para centrar un 'a' */
+    margin: 2rem auto 0 auto;
 }
