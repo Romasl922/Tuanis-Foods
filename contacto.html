@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deVice-width, initial-scale=1.0">
+    <title>Contacto - Tuanis Foods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Logo.jpg" alt="Logo Tuanis Foods" style="height: 65px; width: auto; vertical-align: middle;">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li> 
+                    <li class="dropdown">
+                        <a href="productos.html" class="drop-btn">Productos &#9662;</a> 
+                        <div class="dropdown-content">
+                            <a href="salsas-picantes.html">Salsas Picantes</a>
+                            <a href="jaleas-mermeladas.html">Jaleas y Mermeladas</a>
+                            <a href="pina-chocolate.html">Piña con Chocolate</a>
+                            <a href="cafe.html">Café</a>
+                        </div>
+                    </li>
+                    <li><a href="emprendedores.html">Emprendedores</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <div class="container-contact">
+                
+                <h1>Contáctanos</h1>
+                <p class="contact-intro">
+                    ¿Interesado en nuestros productos, hacer un pedido o unirte como emprendedor?
+                    <br>¡Estamos listos para ayudarte!
+                </p>
+
+                <div class="contact-option whatsapp">
+                    <h2>Vía Rápida: WhatsApp</h2>
+                    <p>Haz clic en el botón para enviarnos un mensaje directo. Es la forma más rápida de hacer tu pedido.</p>
+                    <a href="https://wa.me/50672174788?text=Hola%20Tuanis%20Foods,%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="cta-button-whatsapp">
+                        Chatear por WhatsApp (7217 4788)
+                    </a>
+                </div>
+
+                <div class="contact-option email">
+                    <h2>Correo Electrónico</h2>
+                    <p>Para consultas sobre emprendedores o información general, puedes escribirnos a:</p>
+                    <a href="mailto:romasl87@gmail.com" class="cta-button-email">
+                        romasl87@gmail.com
+                    </a>
+                </div>
+                <div class="contact-option form">
+                    <h2>Formulario de Consulta</h2>
+                    <p>También puedes dejarnos tu mensaje usando este formulario.</p>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Tu Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="cta-button">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tuanis Foods. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

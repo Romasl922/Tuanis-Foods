@@ -386,4 +386,44 @@ a {
 .container-text .cta-button {
     display: table; /* Truco para centrar un 'a' */
     margin: 2rem auto 0 auto;
+}/* --- Estilos para la descripción del producto en la tarjeta --- */
+.product-card .product-description {
+    font-size: 0.95rem; /* Un poco más pequeño que el texto normal */
+    line-height: 1.5;
+    color: #444; /* Un gris oscuro, no tan fuerte como el título */
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    /* Esto es para que todas las tarjetas mantengan la misma altura */
+    min-height: 80px; 
+}/* --- Estilos para detalles del producto (tamaño, tipo) --- */
+.product-card .product-details {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 0.25rem; /* Espacio pequeño antes del precio */
+    margin-top: 1rem;
+}
+
+/* Ajuste para el precio */
+.product-price {
+    font-size: 1.25rem;
+    color: var(--color-acento);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 0; /* Quitamos margen superior */
+}/* --- Estilos para el Botón de Correo --- */
+.cta-button-email {
+    background-color: var(--color-acento); /* Dorado/Oliva */
+    color: var(--color-blanco);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: none; /* Para que muestre el email normal */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+.cta-button-email:hover {
+    background-color: #7a6d41; /* Dorado más oscuro */
 }
