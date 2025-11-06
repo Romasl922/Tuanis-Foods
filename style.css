@@ -56,9 +56,10 @@ a {
     font-weight: bold;
     color: var(--color-texto);
 .navbar .logo img {
-    height: 100px; /* <--- ¡VALOR CAMBIADO! */
+    height: 90px; /* <--- ¡TAMAÑO CORREGIDO! */
     width: auto;
     vertical-align: middle; 
+}
 }
 }
 
