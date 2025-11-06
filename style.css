@@ -55,10 +55,7 @@ a {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--color-texto);
-.navbar .logo img {
-    height: 90px; /* <--- ¡TAMAÑO CORREGIDO! */
-    width: auto;
-    vertical-align: middle; 
+
 }
 
 .navbar nav ul {
